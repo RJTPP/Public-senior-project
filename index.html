@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>คณิตคิดเร็ว</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+
+    <div class="top">
+      <img class="logo" src="logo/kus_logo_small.png" alt="">
+      <div class="name">
+        web application สำหรับฝึกทักษะการบวกลบคูณหารด้วยภาษา HTML, CSS และ JavaScript
+        <br>จัดทำโดย นายรชตะ ธรรมเจริญสถิต
+      </div>
+    </div>
+    
+    <div id="timer"></div>
+
+    <div id="start_game_container">
+      <center id="intro">
+        <p>ถ้าพร้อมแล้วกดเริ่มได้เลย!</p>
+      </center>
+
+      <center class="button start_button" id="start_game_easy" onclick="startGame(1)">
+        <h1>ง่าย</h1>
+      </center>
+      <br>
+      <center class="button start_button" id="start_game_medium" onclick="startGame(2)">
+        <h1>ปานกลาง</h1>
+      </center>
+      <br>
+      <center class="button start_button" id="start_game_hard" onclick="startGame(3)">
+        <h1>ยาก</h1>
+      </center>
+    </div>
+
+      <center id="question"></center>
+      <br>
+    
+
+    <div id="answer_container">
+
+    </div>
+
+    <div id="end_container">
+      <div id="end_score"></div>
+      <div id="solve"></div>
+      <div id="appreciate"></div>
+      <div id="replay_container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
