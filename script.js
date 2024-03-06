@@ -273,7 +273,7 @@ function random_question(){
 }
 
 
-function displayQuestionAnswer(questio){
+function displayQuestionAnswer(question){
     var randomOrderOfQuestion = []  //ex. [3, 2, 1, 4]
     var correctOrderOfRandomOrder  // position 2(randomOrderOfQuestion[2] == 1) because questionAnswer[1] is correct answer
     var incorrectOrder = [] // [0, 1, 3] --> other position of randomOrderOfQuestion
@@ -316,7 +316,7 @@ function displayQuestionAnswer(questio){
 
 
 function startGame(mode){
-    setDifficulty(mod)
+    setDifficulty(mode)
     {questionAnswer} globalThis
     questionAnswer = random_question()
     // clear start page
@@ -337,7 +337,6 @@ function showSumScore(){
 
 }
 function showEndScore(){
-    return
     stopTimer()
     // clear question content
     document.getElementById('answer_container').outerHTML = ''
@@ -373,7 +372,6 @@ function showEndScore(){
 
 
 function correctChecker(inputIsCorrect,playerInput){
-    return
     {point, questionAnswer, numberOfQuestion, allPlayerAnswer} globalThis
     if(inputIsCorrect){
         point += 1
@@ -391,6 +389,3 @@ function correctChecker(inputIsCorrect,playerInput){
         displayQuestionAnswer(questionAnswer)
     }
 }
-
-
-
