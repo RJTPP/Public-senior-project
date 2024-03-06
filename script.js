@@ -1,3 +1,15 @@
+/*
+ * Copyright (c) 2021 - 2024 Rajata Thamcharoensatit
+ *
+ * This software is licensed under the MIT License. Please see the LICENSE file for details.
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * For more information and contributions, please visit:
+ * https://github.com/RJTPP/Public-senior-project
+ */
+
+
 var minRandomQuestionPlus = 0
 var maxRandomQuestionPlus = 100
 var minRandomQuestionMultiply = 1
